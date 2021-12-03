@@ -1,4 +1,61 @@
 //temp//
+
+var chks = document.getElementsByName("chk");
+for (let i = 0; i < chks.length; i++)
+	chks[i].onchange = function() {
+			if (this.checked) {
+				this.parentNode.parentNode.classList.add("selectedr");
+				let c = document.getElementsByName("chk");
+				let j = 0;
+				for (; j < c.length; j++) 
+					if (!c[j].checked) break;
+				if (j == c.length) document.getElementById("chkall").checked = true;
+				else document.getElementById("chkall").checked = false;
+				
+			} else {
+				this.parentNode.parentNode.classList.remove("selectedr");
+				document.getElementById("chkall").checked = false;
+				let c = document.getElementsByName("chk");	
+				let j = 0;		
+				for (; j < c.length; j++)
+					if (c[j].checked) break;
+				
+			}
+	};
+
+
+document.getElementById("chkall").onchange = function() {
+	let c = document.getElementsByName("chk");			
+	for (let i = 0; i < c.length; i++) {
+		c[i].checked = this.checked;
+		if (c[i].checked) c[i].parentNode.parentNode.classList.add("selectedr");
+		else c[i].parentNode.parentNode.classList.remove("selectedr");		
+	}
+};
+
+
+
+document.querySelector(".group-op-delete").onclick = function() {
+	let c = document.getElementsByName("chk");	 		
+	for (let i = c.length-1; i >= 0; i--)
+		if (c[i].checked) {
+			c[i].parentNode.parentNode.parentNode.removeChild(c[i].parentNode.parentNode);
+		}
+};
+
+$(document).ready(() => {
+    $("tr").click((event) => {
+        if($(event.target).parent().prop("class") !== "header-row") {
+            if($(event.target).parent().children().first().children().prop("checked")) {
+                $(event.target).parent().children().first().children().prop("checked", false);
+            }
+            else {
+                $(event.target).parent().children().first().children().prop("checked", true);
+            }
+        }
+    });
+})
+
 $(document).ready(function() {
   $('#myInput').on('keyup', function(event) {
      event.preventDefault();
@@ -10,6 +67,8 @@ $(document).ready(function() {
   });
 });
 //---//
+
+//--//
 (function($) {
   'use strict';
   $(function() {
