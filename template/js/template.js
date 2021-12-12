@@ -1,77 +1,105 @@
 //temp//
+//them thanh pho
+$(document).on('click', '#add-row-1', function () {
+  var tenTP = $("#tenTP").val();
+  var idTp = $("#idTp").val();
+  $(".table tbody tr").last().after(
+    '<tr>' +
+    '<td>' + idTp + '</td>' +
+    '<td>' +tenTP + '</td>' +
+    '<td>' + + '</td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/temp.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/quanHuyen.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a></td>' +
+    '</tr>'
+  );
 
+});
+//them quan huyen
+$(document).on('click', '#add-row-2', function () {
+  var tenQuan = $("#tenQuan").val();
+  var idQuan = $("#idQuan").val();
+  $(".table tbody tr").last().after(
+    '<tr>' +
+    '<td>' + idQuan + '</td>' +
+    '<td>' +tenQuan + '</td>' +
+    '<td>' + + '</td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/temp.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/phuongXa.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a></td>' +
+    '</tr>'
+  );
+
+});
+//them phuong xa
+$(document).on('click', '#add-row-3', function () {
+  var tenPhuong = $("#tenPhuong").val();
+  var idPhuong = $("#idPhuong").val();
+  $(".table tbody tr").last().after(
+    '<tr>' +
+    '<td>' + idPhuong + '</td>' +
+    '<td>' +tenPhuong + '</td>' +
+    '<td>' + + '</td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/temp.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a></td>' +
+    '</tr>'
+  );
+
+});
+//them thon xom
+$(document).on('click', '#add-row-4', function () {
+  var tenThon = $("#tenThon").val();
+  var idThon = $("#idThon").val();
+  $(".table tbody tr").last().after(
+    '<tr>' +
+    '<td>' + idThon + '</td>' +
+    '<td>' +tenThon + '</td>' +
+    '<td>' + + '</td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/tables/temp.html">Xem</a></td>' +
+    '<td><a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a></td>' +
+    '</tr>'
+  );
+
+});
+
+// xóa hàng
+$(document).on('click', ".btn_row_delete", function (e) {
+  var r = $(this).closest('tr').remove();
+});
+// check box
 var chks = document.getElementsByName("chk");
 for (let i = 0; i < chks.length; i++)
-	chks[i].onchange = function() {
-			if (this.checked) {
-				this.parentNode.parentNode.classList.add("selectedr");
-				let c = document.getElementsByName("chk");
-				let j = 0;
-				for (; j < c.length; j++) 
-					if (!c[j].checked) break;
-				if (j == c.length) document.getElementById("chkall").checked = true;
-				else document.getElementById("chkall").checked = false;
-				
-			} else {
-				this.parentNode.parentNode.classList.remove("selectedr");
-				document.getElementById("chkall").checked = false;
-				let c = document.getElementsByName("chk");	
-				let j = 0;		
-				for (; j < c.length; j++)
-					if (c[j].checked) break;
-				
-			}
-	};
-
-
-document.getElementById("chkall").onchange = function() {
-	let c = document.getElementsByName("chk");			
-	for (let i = 0; i < c.length; i++) {
-		c[i].checked = this.checked;
-		if (c[i].checked) c[i].parentNode.parentNode.classList.add("selectedr");
-		else c[i].parentNode.parentNode.classList.remove("selectedr");		
-	}
+  chks[i].onchange = function () {
+    if (this.checked) {
+      this.parentNode.parentNode.classList.add("selectedr");
+      let c = document.getElementsByName("chk");
+      let j = 0;
+      for (; j < c.length; j++)
+        if (!c[j].checked) break;
+      if (j == c.length) document.getElementById("chkall").checked = true;
+      else document.getElementById("chkall").checked = false;
+    } else {
+      this.parentNode.parentNode.classList.remove("selectedr");
+      document.getElementById("chkall").checked = false;
+      let c = document.getElementsByName("chk");
+      let j = 0;
+      for (; j < c.length; j++)
+        if (c[j].checked) break;
+    }
+  };
+document.getElementById("chkall").onchange = function () {
+  let c = document.getElementsByName("chk");
+  for (let i = 0; i < c.length; i++) {
+    c[i].checked = this.checked;
+    if (c[i].checked) c[i].parentNode.parentNode.classList.add("selectedr");
+    else c[i].parentNode.parentNode.classList.remove("selectedr");
+  }
 };
 
-
-
-document.querySelector(".group-op-delete").onclick = function() {
-	let c = document.getElementsByName("chk");	 		
-	for (let i = c.length-1; i >= 0; i--)
-		if (c[i].checked) {
-			c[i].parentNode.parentNode.parentNode.removeChild(c[i].parentNode.parentNode);
-		}
-};
-
-$(document).ready(() => {
-    $("tr").click((event) => {
-        if($(event.target).parent().prop("class") !== "header-row") {
-            if($(event.target).parent().children().first().children().prop("checked")) {
-                $(event.target).parent().children().first().children().prop("checked", false);
-            }
-            else {
-                $(event.target).parent().children().first().children().prop("checked", true);
-            }
-        }
-    });
-})
-
-$(document).ready(function() {
-  $('#myInput').on('keyup', function(event) {
-     event.preventDefault();
-     /* Act on the event */
-     var tukhoa = $(this).val().toLowerCase();
-     $('#myTable tr').filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(tukhoa)>-1);
-     });
-  });
-});
-//---//
-
-//--//
-(function($) {
+(function ($) {
   'use strict';
-  $(function() {
+  $(function () {
     var body = $('body');
     var contentWrapper = $('.content-wrapper');
     var scroller = $('.container-scroller');
@@ -107,19 +135,19 @@ $(document).ready(function() {
     }
 
     var current = location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
-    $('.nav li a', sidebar).each(function() {
+    $('.nav li a', sidebar).each(function () {
       var $this = $(this);
       addActiveClass($this);
     })
 
-    $('.horizontal-menu .nav li a').each(function() {
+    $('.horizontal-menu .nav li a').each(function () {
       var $this = $(this);
       addActiveClass($this);
     })
 
     //Close other submenu in sidebar on opening any
 
-    sidebar.on('show.bs.collapse', '.collapse', function() {
+    sidebar.on('show.bs.collapse', '.collapse', function () {
       sidebar.find('.collapse.show').collapse('hide');
     });
 
@@ -137,14 +165,14 @@ $(document).ready(function() {
           const chatsScroll = new PerfectScrollbar('.chats');
         }
         if (body.hasClass("sidebar-fixed")) {
-          if($('#sidebar').length) {
+          if ($('#sidebar').length) {
             var fixedSidebarScroll = new PerfectScrollbar('#sidebar .nav');
           }
         }
       }
     }
 
-    $('[data-bs-toggle="minimize"]').on("click", function() {
+    $('[data-bs-toggle="minimize"]').on("click", function () {
       if ((body.hasClass('sidebar-toggle-display')) || (body.hasClass('sidebar-absolute'))) {
         body.toggleClass('sidebar-hidden');
       } else {
@@ -156,22 +184,22 @@ $(document).ready(function() {
     $(".form-check label,.form-radio label").append('<i class="input-helper"></i>');
 
     //Horizontal menu in mobile
-    $('[data-toggle="horizontal-menu-toggle"]').on("click", function() {
+    $('[data-toggle="horizontal-menu-toggle"]').on("click", function () {
       $(".horizontal-menu .bottom-navbar").toggleClass("header-toggled");
     });
     // Horizontal menu navigation in mobile menu on click
     var navItemClicked = $('.horizontal-menu .page-navigation >.nav-item');
-    navItemClicked.on("click", function(event) {
-      if(window.matchMedia('(max-width: 991px)').matches) {
-        if(!($(this).hasClass('show-submenu'))) {
+    navItemClicked.on("click", function (event) {
+      if (window.matchMedia('(max-width: 991px)').matches) {
+        if (!($(this).hasClass('show-submenu'))) {
           navItemClicked.removeClass('show-submenu');
         }
         $(this).toggleClass('show-submenu');
-      }        
+      }
     })
 
-    $(window).scroll(function() {
-      if(window.matchMedia('(min-width: 992px)').matches) {
+    $(window).scroll(function () {
+      if (window.matchMedia('(min-width: 992px)').matches) {
         var header = $('.horizontal-menu');
         if ($(window).scrollTop() >= 70) {
           $(header).addClass('fixed-on-scroll');
@@ -183,8 +211,8 @@ $(document).ready(function() {
   });
 
   // focus input when clicking on search icon
-  $('#navbar-search-icon').click(function() {
+  $('#navbar-search-icon').click(function () {
     $("#navbar-search-input").focus();
   });
-  
+
 })(jQuery);

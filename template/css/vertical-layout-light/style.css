@@ -135,6 +135,40 @@
     opacity: 1;
   }
 }
+
+
+.editable{ background:rgb(215, 217, 219)}
+.modalll.open {
+  display: flex;
+}
+.modalll {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modalll-container {
+  top: 6%;
+  background-color: white;
+  width: 700px;
+  max-width: calc(100%-32px);
+  min-height: 150px;
+  position: relative;
+  animation: modallFadeIn ease 0.5s;
+}
+.modalll-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
 .modall.open {
   display: flex;
 }
@@ -206,7 +240,7 @@
   }
 }
 
-#tbl tr.selectedr {
+#tbl tr.selectedr td{
   background-color:rgb(87, 201, 77);
 }
 .nodisplay {

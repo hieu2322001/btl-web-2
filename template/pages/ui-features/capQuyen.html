@@ -27,21 +27,11 @@
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-        <div class="me-3">
-          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
-            <span class="icon-menu"></span>
-          </button>
-        </div>
-        <div>
-          <a class="navbar-brand brand-logo" href="../../index.html">
-            <img src="../../images/logo.svg" alt="logo" />
-          </a>
-          <a class="navbar-brand brand-logo-mini" href="../../index.html">
-            <img src="../../images/logo-mini.svg" alt="logo" />
-          </a>
+        <div class="navbar-brand text-center justify-content-center brand-logo" style="width: 100%; height: 100%;">
+          <img src="../../images/co-viet-nam-2.jpg" style="width:60%; height: 100%;" alt="logo" />
         </div>
       </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+      <div class="navbar-menu-wrapper d-flex align-items-top">
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
             <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
@@ -50,9 +40,11 @@
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3" >
+            <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#"
+              data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="messageDropdown">
+              <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">Select category</p>
               </a>
               <div class="dropdown-divider"></div>
@@ -100,7 +92,8 @@
             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="notificationDropdown">
               <a class="dropdown-item py-3 border-bottom">
                 <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
                 <span class="badge badge-pill badge-primary float-right">View all</span>
@@ -134,12 +127,14 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown"> 
-            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
             </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="countDropdown">
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="countDropdown">
               <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
                 <span class="badge badge-pill badge-primary float-right">View all</span>
@@ -183,15 +178,20 @@
                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                 <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
               </div>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My
+                Profile <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i>
+                Messages</a>
+              <a class="dropdown-item"><i
+                  class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i>
+                FAQ</a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
           </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-bs-toggle="offcanvas">
           <span class="mdi mdi-menu"></span>
         </button>
       </div>
@@ -204,8 +204,12 @@
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border me-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
+          </div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -221,14 +225,17 @@
         <i class="settings-close ti-close"></i>
         <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+            <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab"
+              aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+            <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab"
+              aria-controls="chats-section">CHATS</a>
           </li>
         </ul>
         <div class="tab-content" id="setting-content">
-          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel"
+            aria-labelledby="todo-section">
             <div class="add-items d-flex px-3 mb-0">
               <form class="form w-100">
                 <div class="form-group d-flex">
@@ -312,7 +319,8 @@
             </div>
             <ul class="chat-list">
               <li class="list active">
-                <div class="profile"><img src="../../images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face1.jpg" alt="image"><span class="online"></span>
+                </div>
                 <div class="info">
                   <p>Thomas Douglas</p>
                   <p>Available</p>
@@ -320,7 +328,8 @@
                 <small class="text-muted my-auto">19 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="../../images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="profile"><img src="../../images/faces/face2.jpg" alt="image"><span class="offline"></span>
+                </div>
                 <div class="info">
                   <div class="wrapper d-flex">
                     <p>Catherine</p>
@@ -331,7 +340,8 @@
                 <small class="text-muted my-auto">23 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="../../images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face3.jpg" alt="image"><span class="online"></span>
+                </div>
                 <div class="info">
                   <p>Daniel Russell</p>
                   <p>Available</p>
@@ -339,7 +349,8 @@
                 <small class="text-muted my-auto">14 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="../../images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="profile"><img src="../../images/faces/face4.jpg" alt="image"><span class="offline"></span>
+                </div>
                 <div class="info">
                   <p>James Richardson</p>
                   <p>Away</p>
@@ -347,7 +358,8 @@
                 <small class="text-muted my-auto">2 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="../../images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face5.jpg" alt="image"><span class="online"></span>
+                </div>
                 <div class="info">
                   <p>Madeline Kennedy</p>
                   <p>Available</p>
@@ -355,7 +367,8 @@
                 <small class="text-muted my-auto">5 min</small>
               </li>
               <li class="list">
-                <div class="profile"><img src="../../images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="profile"><img src="../../images/faces/face6.jpg" alt="image"><span class="online"></span>
+                </div>
                 <div class="info">
                   <p>Sarah Graves</p>
                   <p>Available</p>
@@ -376,17 +389,20 @@
               <i class="mdi mdi-newspaper menu-icon"></i>
               <span class="menu-title">Tổng quan</span>
             </a>
-          </li> 
+          </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+              aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-account"></i>
               <span class="menu-title">Quản lí</span>
-              <i class="menu-arrow"></i> 
+              <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/template/pages/ui-features/capQuyen.html">Cấp quyền</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/template/pages/forms/addAcount.html">Thêm tài khoản</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/template/pages/ui-features/capQuyen.html">Cấp
+                    quyền</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/template/pages/forms/addAcount.html">Thêm tài
+                    khoản</a></li>
               </ul>
             </div>
           </li>
@@ -398,8 +414,10 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/template/pages/tables/tinhTP.html">Danh sách</a></li>
-                <li class="nav-item"> <a class="nav-link" href="/template/pages/forms/addPeople.html">Thêm người dân</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/template/pages/tables/tinhTP.html">Danh sách</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="/template/pages/forms/addPeople.html">Thêm người dân</a>
+                </li>
               </ul>
             </div>
           </li>
@@ -424,28 +442,31 @@
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Tiêu đề</h4>
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-                      <thead style="background-color: rgb(120, 157, 226);">
+                  <h4 class="card-title">Quản lí tài khoản</h4>
+                  <div class="table-responsive pt-3">
+                    <table id="tbl" class="table table-bordered table-hover">
+                      <thead class="header-row" style="background-color: rgb(120, 157, 226);">
                         <tr>
                           <th>
                             STT
                           </th>
                           <th>
-                            Tên phường/xã
+                            Tên khu vực
                           </th>
                           <th>
-                            Dân số
+                            Mã đăng nhập
                           </th>
                           <th>
-                            Danh sách dân
+                            Mật khẩu
                           </th>
                           <th>
-                            Danh sách thôn/xóm
+                            <input type="checkbox" id="chkall"> Cấp quyền
                           </th>
                           <th>
-                            Phân tích số liệu
+                            Sửa đổi
+                          </th>
+                          <th>
+                            Xóa
                           </th>
                         </tr>
                       </thead>
@@ -455,39 +476,45 @@
                             1
                           </td>
                           <td>
-                            Dịch Vọng
+                            Thái Bình
                           </td>
                           <td>
-                            34021
+                            17
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/danSo.html">Xem</a>
+                            123456789
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a>
+                            <input type="checkbox" name="chk">
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a>
+                            <button class="btn btn-settings mdi mdi-settings js-settings"></button>
+                          </td>
+                          <td>
+                            <button class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            2
+                            1
                           </td>
                           <td>
-                            Dịch Vọng Hậu
+                            Hà Nội
                           </td>
                           <td>
-                            108432
+                            19
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/danSo.html">Xem</a>
+                            012345678
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a>
+                            <input type="checkbox" name="chk">
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a>
+                            <button class="btn btn-settings mdi mdi-settings js-settings"></button>
+                          </td>
+                          <td>
+                            <button class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
                           </td>
                         </tr>
                         <tr>
@@ -495,79 +522,22 @@
                             3
                           </td>
                           <td>
-                            Mai Dịch
+                            Hải Phòng
                           </td>
                           <td>
-                            294213
+                            16
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/danSo.html">Xem</a>
+                            1234567890
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a>
+                            <input type="checkbox" name="chk">
                           </td>
                           <td>
-                            <a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            4
+                            <button class="btn btn-settings mdi mdi-settings js-settings"></button>
                           </td>
                           <td>
-                            Nghĩa Đô
-                          </td>
-                          <td>
-                            208571
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/danSo.html">Xem</a>
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a>
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            5
-                          </td>
-                          <td>
-                            Nghĩa Tân
-                          </td>
-                          <td>
-                            100000
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/danSo.html">Xem</a>
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a>
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            6
-                          </td>
-                          <td>
-                            Trung Hòa
-                          </td>
-                          <td>
-                            300000
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/danSo.html">Xem</a>
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/tables/toThonXom.html">Xem</a>
-                          </td>
-                          <td>
-                            <a class="nav-link" style="color: black" href="../../pages/charts/chartjs.html">Xem</a>
+                            <button class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
                           </td>
                         </tr>
                       </tbody>
@@ -582,8 +552,6 @@
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
           </div>
         </footer>
         <!-- partial -->
@@ -592,6 +560,51 @@
     </div>
     <!-- page-body-wrapper ends -->
   </div>
+
+  <div class="modall js-modall">
+    <div class="modall-container">
+      <div class="modall-close js-modall-close">
+        <i class="ti-close"></i>
+      </div>
+      <header class="modall-header">
+        Sửa đổi
+      </header>
+
+      <div class="modall-body">
+        <label for="" class="modall-label">
+          Tên khu vực
+        </label>
+        <input type="text" class="modall-input">
+        <label for="" class="modall-label">
+          Mã đăng nhập
+        </label>
+        <input type="text" class="modall-input">
+        <label for="" class="modall-label">
+          Mật khẩu
+        </label>
+        <input type="text" class="modall-input">
+
+        <button id="saveChange">Lưu</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // change password account
+    const setBtns = document.querySelectorAll('.js-settings')
+    const modall = document.querySelector('.js-modall')
+    const modallClose = document.querySelector('.js-modall-close')
+    function showSet() {
+      modall.classList.add('open')
+    }
+    function hideSet() {
+      modall.classList.remove('open')
+    }
+    for (const setBtn of setBtns) {
+      setBtn.addEventListener('click', showSet)
+    }
+    modallClose.addEventListener('click', hideSet)
+  </script>
   <!-- container-scroller -->
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
