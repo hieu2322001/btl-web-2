@@ -486,22 +486,10 @@
                                                         GT
                                                     </th>
                                                     <th>
-                                                        Dân tộc
+                                                        Quê quán
                                                     </th>
                                                     <th>
-                                                        Tôn giáo
-                                                    </th>
-                                                    <th>
-                                                        Tổ/thôn/xóm
-                                                    </th>
-                                                    <th>
-                                                        Phường/xã
-                                                    </th>
-                                                    <th>
-                                                        Quận/huyện
-                                                    </th>
-                                                    <th>
-                                                        Tỉnh/TP
+                                                        Chi tiết
                                                     </th>
                                                     <th>
                                                         Sửa
@@ -523,22 +511,11 @@
                                                         Nam
                                                     </td>
                                                     <td class="dataTable">
-                                                        Kinh
+                                                        vũ ninh, kiến xương, thái bình
                                                     </td>
-                                                    <td class="dataTable">
-                                                        Không
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Đồng vàng
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        vũ ninh
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        kiến xương
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        thái bình
+                                                    <td>
+                                                        <button
+                                                            class="btn btn-settings mdi mdi-account-outline js-profile"></button>
                                                     </td>
                                                     <td>
                                                         <button
@@ -549,43 +526,7 @@
                                                             class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="dataTable">
-                                                        Hoàng Đức Giang
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        19/02/1999
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Nam
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Kinh
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Không
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Đồng vàng
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        vũ ninh
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        kiến xương
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        thái bình
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-settings js-settings"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
-                                                    </td>
-                                                </tr>
+                                                
                                             </tbody>
                                         </table>
                                     </div>
@@ -623,46 +564,60 @@
             <div class="modall-body">
                 <form class="forms-sample">
                     <div>
-                        <label>Họ và tên</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Họ và tên">
                     </div>
                     <div>
-                        <label">Ngày sinh</label>
-                            <input type="date" class="form-control">
+                            <input style="margin-bottom: 5px;" type="date" class="form-control" placeholder="ngày sinh">
                     </div>
                     <div>
-                        <label">Giới tính</label>
-                            <select class="form-control" id="exampleSelectGender">
+
+                            <select class="form-control" id="exampleSelectGender"  style="margin-bottom: 5px;">
                                 <option>Nam</option>
                                 <option>Nữ</option>
                             </select>
                     </div>
                     <div>
-                        <label>Dân tộc</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="CMND/CCCD">
                     </div>
                     <div>
-                        <label>Tôn giáo</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Dân tộc">
                     </div>
                     <div>
-                        <label>Tổ/Thôn/Xóm</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Tôn giáo">
                     </div>
                     <div>
-                        <label>Phường/Xã</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Quê quán">
                     </div>
                     <div>
-                        <label>Quận/Huyện</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Đ/c thường trú">
                     </div>
                     <div>
-                        <label>Tỉnh/Thành phố</label>
-                        <input type="text" class="form-control">
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Đ/c tạm trú">
+                    </div>
+                    <div>
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Trình độ văn hóa">
+                    </div>
+                    <div>
+                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Nghề nghiệp">
                     </div>
                     <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 5px;">Lưu</button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thong tin nguoi dan -->
+    <div>
+        <div class="modalll-container">
+            <div class="modall-close js-modalll-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modall-header">
+                Chỉnh sửa
+            </header>
+
+            <div class="modall-body">
+                
             </div>
         </div>
     </div>
@@ -682,6 +637,8 @@
             setBtn.addEventListener('click', showSet)
         }
         modalllClose.addEventListener('click', hideSet)
+        // thong tin nguoi dan
+        
     </script>
     <!-- container-scroller -->
     <!-- plugins:js -->

@@ -448,9 +448,6 @@
                       <thead class="header-row" style="background-color: rgb(120, 157, 226);">
                         <tr>
                           <th>
-                            STT
-                          </th>
-                          <th>
                             Tên khu vực
                           </th>
                           <th>
@@ -460,7 +457,10 @@
                             Mật khẩu
                           </th>
                           <th>
-                            <input type="checkbox" id="chkall"> Cấp quyền
+                            Thời gian bắt đầu
+                          </th>
+                          <th>
+                            Thời gian kết thúc
                           </th>
                           <th>
                             Sửa đổi
@@ -473,9 +473,6 @@
                       <tbody>
                         <tr>
                           <td>
-                            1
-                          </td>
-                          <td>
                             Thái Bình
                           </td>
                           <td>
@@ -485,7 +482,10 @@
                             123456789
                           </td>
                           <td>
-                            <input type="checkbox" name="chk">
+                            <p><time>2021-12-13 20:00</time></p>
+                          </td>
+                          <td>
+                            <p><time>2021-12-13 20:00</time></p>
                           </td>
                           <td>
                             <button class="btn btn-settings mdi mdi-settings js-settings"></button>
@@ -495,9 +495,6 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
-                            1
-                          </td>
                           <td>
                             Hà Nội
                           </td>
@@ -508,7 +505,10 @@
                             012345678
                           </td>
                           <td>
-                            <input type="checkbox" name="chk">
+                            <p><time>2021-12-13 20:00</time></p>
+                          </td>
+                          <td>
+                            <p><time>2021-12-13 20:00</time></p>
                           </td>
                           <td>
                             <button class="btn btn-settings mdi mdi-settings js-settings"></button>
@@ -518,9 +518,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>
-                            3
-                          </td>
+                          
                           <td>
                             Hải Phòng
                           </td>
@@ -531,7 +529,10 @@
                             1234567890
                           </td>
                           <td>
-                            <input type="checkbox" name="chk">
+                            <p><time>2021-12-13 20:00</time></p>
+                          </td>
+                          <td>
+                            <p><time>2021-12-13 20:00</time></p>
                           </td>
                           <td>
                             <button class="btn btn-settings mdi mdi-settings js-settings"></button>
@@ -583,11 +584,19 @@
           Mật khẩu
         </label>
         <input type="text" class="modall-input">
-
+        <label for="" class="modall-label">
+          Thời gian bắt đầu
+        </label>
+        <input type="datetime-local" class="modall-input">
+        <label for="" class="modall-label">
+          Thời gian kết thúc
+        </label>
+        <input type="datetime-local" class="modall-input">
         <button id="saveChange">Lưu</button>
       </div>
     </div>
   </div>
+  <!-- set time -->
 
   <script>
     // change password account

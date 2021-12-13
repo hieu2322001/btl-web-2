@@ -141,6 +141,9 @@
 .modalll.open {
   display: flex;
 }
+.open {
+  display: flex;
+}
 .modalll {
   position: fixed;
   top: 0;
@@ -184,6 +187,7 @@
   justify-content: center;
 }
 .modall-container {
+  top: 5%;
   background-color: white;
   width: 700px;
   max-width: calc(100%-32px);
@@ -193,7 +197,7 @@
 }
 .modall-header {
   background: rgb(120, 157, 226);
-  height: 70px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
