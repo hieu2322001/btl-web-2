@@ -515,7 +515,7 @@
                                                     </td>
                                                     <td>
                                                         <button
-                                                            class="btn btn-settings mdi mdi-account-outline js-profile"></button>
+                                                            class="btn btn-settings mdi mdi-account-outline js-profiles"></button>
                                                     </td>
                                                     <td>
                                                         <button
@@ -607,17 +607,27 @@
     </div>
 
     <!-- Thong tin nguoi dan -->
-    <div>
-        <div class="modalll-container">
-            <div class="modall-close js-modalll-close">
+    <div class="modallll js-modallll">
+        <div class="modallll-container">
+            <div class="modall-close js-modallll-close">
                 <i class="ti-close"></i>
             </div>
-            <header class="modall-header">
-                Chỉnh sửa
+            <header class="modallll-header">
+                Thông tin chi tiết
             </header>
 
             <div class="modall-body">
-                
+                <p class="text-black fw-bold">Họ và tên : <span class="fw-light">Phạm Trung Hiếu</span></p>
+                <p class="text-black fw-bold">Ngày sinh : <span class="fw-light">23/02/2001</span></p>
+                <p class="text-black fw-bold">Giới tính : <span class="fw-light">Nam</span></p>
+                <p class="text-black fw-bold">CMND/CCCD : <span class="fw-light">012304567896</span></p>
+                <p class="text-black fw-bold">Dân tộc : <span class="fw-light">Kinh</span></p>
+                <p class="text-black fw-bold">Tôn giáo : <span class="fw-light">Không</span></p>
+                <p class="text-black fw-bold">Quê quán : <span class="fw-light">vũ ninh, kiến xương, thái bình</span></p>
+                <p class="text-black fw-bold">Đ/c thường trú : <span class="fw-light">vũ ninh, kiến xương, thái bình</span></p>
+                <p class="text-black fw-bold">Đ/c tạm trú : <span class="fw-light">vũ ninh, kiến xương, thái bình</span></p>
+                <p class="text-black fw-bold">Trình độ văn hóa : <span class="fw-light">12/12</span></p>
+                <p class="text-black fw-bold">Nghề nghiệp : <span class="fw-light">sinh viên</span></p>
             </div>
         </div>
     </div>
@@ -638,7 +648,19 @@
         }
         modalllClose.addEventListener('click', hideSet)
         // thong tin nguoi dan
-        
+        const setProfiles = document.querySelectorAll('.js-profiles')
+        const modallll = document.querySelector('.js-modallll')
+        const modallllClose = document.querySelector('.js-modallll-close')
+        function showProfile() {
+            modallll.classList.add('open')
+        }
+        function hideProfile() {
+            modallll.classList.remove('open')
+        }
+        for (const setProfile of setProfiles) {
+            setProfile.addEventListener('click', showProfile)
+        }
+        modallllClose.addEventListener('click', hideProfile)
     </script>
     <!-- container-scroller -->
     <!-- plugins:js -->
