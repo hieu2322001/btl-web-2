@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../../vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
@@ -440,8 +442,8 @@
                         </a>
                         <div class="collapse" id="tables">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="/template/pages/tables/tinhTP.html">Danh
-                                        sách</a></li>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="/template/pages/tables/tinhTP.html">Danh sách</a></li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="/template/pages/forms/addPeople.html">Thêm người dân</a></li>
                             </ul>
@@ -466,123 +468,22 @@
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row">
-                        <div class="col-lg-12 grid-margin stretch-card">
+                        <div class="col-12 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Danh sách</h4>
-                                    
-                                    <input type="text" class="form-control" id="myInput" placeholder="Tìm kiếm"
-                                        style="margin-bottom: 5px;">
-                                    <div class="table-responsive pt-3">
-                                        <table class="table myTable">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        Họ tên
-                                                    </th>
-                                                    <th>
-                                                        Ngày sinh
-                                                    </th>
-                                                    <th>
-                                                        GT
-                                                    </th>
-                                                    <th>
-                                                        Quê quán
-                                                    </th>
-                                                    <th>
-                                                        Chi tiết
-                                                    </th>
-                                                    <th>
-                                                        Sửa
-                                                    </th>
-                                                    <th>
-                                                        Xóa
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody id="myTable">
-                                                <tr class="dataTable">
-                                                    <td class="dataTable">
-                                                        Hoàng Đức Giang
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        19/02/1999
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Nam
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        vũ ninh, kiến xương, thái bình
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-account-outline js-profiles"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-settings js-settings"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
-                                                    </td>
-                                                </tr>
-                                                <tr class="dataTable">
-                                                    <td class="dataTable">
-                                                        Hoàng Đức Bình
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        19/02/1999
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Nam
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        vũ ninh, kiến xương, Hà Nội
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-account-outline js-profiles"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-settings js-settings"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
-                                                    </td>
-                                                </tr>
-                                                <tr class="dataTable">
-                                                    <td class="dataTable">
-                                                        Hoàng Đức Hiếu
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        19/02/1999
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        Nam
-                                                    </td>
-                                                    <td class="dataTable">
-                                                        vũ ninh, kiến xương, Bắc Ninh
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-account-outline js-profiles"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-settings js-settings"></button>
-                                                    </td>
-                                                    <td>
-                                                        <button
-                                                            class="btn btn-settings mdi mdi-delete js-delete btn_row_delete"></button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <button type="submit" class="btn btn-primary me-2">Xem thêm</button>
-                                    </div>
+                                    <h4 class="card-title" >Báo cáo hoàn thành</h4>
+                                    <form class="forms-sample">
+                                        <div class="form-group">
+                                            <label for="exampleInputName1">Khu vực</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputName1">Ghi chú</label>
+                                            <input type="" class="form-control" style="height: 100px;">
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary me-2">Gửi</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -592,8 +493,11 @@
                 <!-- partial:../../partials/_footer.html -->
                 <footer class="footer">
                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Cộng hòa Xã hội Chủ nghĩa Việt Nam</span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Trường Đại học Công Nghệ - Đại học Quốc gia Hà Nội</span>
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a
+                                href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from
+                            BootstrapDash.</span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All
+                            rights reserved.</span>
                     </div>
                 </footer>
                 <!-- partial -->
@@ -602,121 +506,13 @@
         </div>
         <!-- page-body-wrapper ends -->
     </div>
-    <div class="modalll js-modalll">
-        <div class="modalll-container">
-            <div class="modall-close js-modalll-close">
-                <i class="ti-close"></i>
-            </div>
-            <header class="modall-header">
-                Chỉnh sửa
-            </header>
-
-            <div class="modall-body">
-                <form class="forms-sample">
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Họ và tên">
-                    </div>
-                    <div>
-                            <input style="margin-bottom: 5px;" type="date" class="form-control" placeholder="ngày sinh">
-                    </div>
-                    <div>
-
-                            <select class="form-control" id="exampleSelectGender"  style="margin-bottom: 5px;">
-                                <option>Nam</option>
-                                <option>Nữ</option>
-                            </select>
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="CMND/CCCD">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Dân tộc">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Tôn giáo">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Quê quán">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Đ/c thường trú">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Đ/c tạm trú">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Trình độ văn hóa">
-                    </div>
-                    <div>
-                        <input style="margin-bottom: 5px;" type="text" class="form-control" placeholder="Nghề nghiệp">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-sm" style="margin-top: 5px;">Lưu</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Thong tin nguoi dan -->
-    <div class="modallll js-modallll">
-        <div class="modallll-container">
-            <div class="modall-close js-modallll-close">
-                <i class="ti-close"></i>
-            </div>
-            <header class="modallll-header">
-                Thông tin chi tiết
-            </header>
-
-            <div class="modall-body">
-                <p class="text-black fw-bold">Họ và tên : <span class="fw-light">Phạm Trung Hiếu</span></p>
-                <p class="text-black fw-bold">Ngày sinh : <span class="fw-light">23/02/2001</span></p>
-                <p class="text-black fw-bold">Giới tính : <span class="fw-light">Nam</span></p>
-                <p class="text-black fw-bold">CMND/CCCD : <span class="fw-light">012304567896</span></p>
-                <p class="text-black fw-bold">Dân tộc : <span class="fw-light">Kinh</span></p>
-                <p class="text-black fw-bold">Tôn giáo : <span class="fw-light">Không</span></p>
-                <p class="text-black fw-bold">Quê quán : <span class="fw-light">vũ ninh, kiến xương, thái bình</span></p>
-                <p class="text-black fw-bold">Đ/c thường trú : <span class="fw-light">vũ ninh, kiến xương, thái bình</span></p>
-                <p class="text-black fw-bold">Đ/c tạm trú : <span class="fw-light">vũ ninh, kiến xương, thái bình</span></p>
-                <p class="text-black fw-bold">Trình độ văn hóa : <span class="fw-light">12/12</span></p>
-                <p class="text-black fw-bold">Nghề nghiệp : <span class="fw-light">sinh viên</span></p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // change password account
-        const setBtns = document.querySelectorAll('.js-settings')
-        const modalll = document.querySelector('.js-modalll')
-        const modalllClose = document.querySelector('.js-modalll-close')
-        function showSet() {
-            modalll.classList.add('open')
-        }
-        function hideSet() {
-            modalll.classList.remove('open')
-        }
-        for (const setBtn of setBtns) {
-            setBtn.addEventListener('click', showSet)
-        }
-        modalllClose.addEventListener('click', hideSet)
-        // thong tin nguoi dan
-        const setProfiles = document.querySelectorAll('.js-profiles')
-        const modallll = document.querySelector('.js-modallll')
-        const modallllClose = document.querySelector('.js-modallll-close')
-        function showProfile() {
-            modallll.classList.add('open')
-        }
-        function hideProfile() {
-            modallll.classList.remove('open')
-        }
-        for (const setProfile of setProfiles) {
-            setProfile.addEventListener('click', showProfile)
-        }
-        modallllClose.addEventListener('click', hideProfile)
-    </script>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
+    <script src="../../vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="../../vendors/select2/select2.min.js"></script>
     <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
@@ -727,6 +523,9 @@
     <script src="../../js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
+    <script src="../../js/file-upload.js"></script>
+    <script src="../../js/typeahead.js"></script>
+    <script src="../../js/select2.js"></script>
     <!-- End custom js for this page-->
 </body>
 

@@ -1,4 +1,13 @@
-//temp//
+//tim kiem//
+$(document).ready(function() {
+  $('#myInput').on('keyup', function(event) {
+     event.preventDefault();
+     var tukhoa = $(this).val().toLowerCase();
+     $('#myTable tr').filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(tukhoa)>-1);
+     });
+  });
+});
 //them thanh pho
 $(document).on('click', '#add-row-1', function () {
   var tenTP = $("#tenTP").val();

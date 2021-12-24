@@ -41,16 +41,51 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="icon-bell"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+              aria-labelledby="countDropdown">
+              <a class="dropdown-item py-3">
+                <p class="mb-0 font-weight-medium float-left">Thông báo </p>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-item-content flex-grow py-2">
+                  <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                  <p class="fw-light small-text mb-0"> The meeting is cancelled </p>
+                </div>
+              </a>
+            </div>
+          </li>
           <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-account"></i>
+              <i class="mdi mdi-account" style="font-size: 27px;"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <div class="dropdown-header text-center">
-                <i class="dropdown-item-icon mdi mdi-account-outline"></i>
+                <i class="dropdown-item-icon mdi mdi-account-outline" style="font-size: 20px;"></i>
               </div>
-              <button class="dropdown-item" href="/template/pages/samples/profile.html"><i
-                  class="dropdown-item-icon mdi mdi-settings text-primary me-2"></i>Cài đặt</button>
+              <a class="dropdown-item" href="/template/pages/forms/reqComplete.html"><i
+                  class="dropdown-item-icon mdi mdi-check text-primary me-2"></i>Báo cáo hoàn thành</a>
+              <a class="dropdown-item"
+                href="https://drive.google.com/file/d/1hjuafd0HY15HGFeeQmUaV7In_G_B5jaH/view?usp=sharing"><i
+                  class="dropdown-item-icon mdi mdi-account-card-details text-primary me-2"></i>Mẫu phiếu thu thập</a>
               <a class="dropdown-item" href="/template/pages/samples/login.html"><i
                   class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Đăng xuất</a>
             </div>
@@ -99,22 +134,12 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="/template/pages/tables/tinhTP.html">Danh sách</a>
+                <li class="nav-item"> <a class="nav-link" href="/template/pages/tables/danSo.html">Dân số</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="/template/pages/tables/tinhTP.html">Khu vực</a>
                 </li>
                 <li class="nav-item"> <a class="nav-link" href="/template/pages/forms/addPeople.html">Thêm người dân</a>
                 </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-history"></i>
-              <span class="menu-title">Lịch sử</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
               </ul>
             </div>
           </li>
@@ -126,10 +151,11 @@
           <div class="row">
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card" style="padding: 20px;">
-                <button class="btn btn-settings mdi mdi-settings js-account" style="right: 10px; position: absolute; top: 10px; font-size: 20px; color: rgb(170, 98, 64);"></button>
+                <button class="btn btn-settings btn-primary btn-sm  mdi mdi-settings js-account"
+                  style="right: 30px; position: absolute; top: 30px; font-size: 15px"></button>
                 <h4 class="align-self-center justify-content-center mt-2" style="font-size: 30px;">THÔNG TIN</h4>
                 <div class="card-body" style="display: flex;">
-                  <div style="display: block;" style="width: 50%;">
+                  <div class="img-sidebar">
                     <div>
                       <img src="images/COVID-19_Pandemic_Cases_in_Vietnam.svg.png" style="height: 250px" alt="">
                     </div>
@@ -208,6 +234,10 @@
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Cộng hòa Xã hội Chủ nghĩa Việt
+              Nam</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Trường Đại học Công Nghệ - Đại học
+              Quốc gia Hà Nội</span>
           </div>
         </footer>
         <!-- partial -->
