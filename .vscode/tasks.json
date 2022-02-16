@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "install",
+			"path": "template/",
+			"problemMatcher": [],
+			"label": "npm: install - template",
+			"detail": "install dependencies from package"
+		}
+	]
+}
